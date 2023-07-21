@@ -1,6 +1,8 @@
 package virtual_pet;
 
 public class VirtualPet {
+    private String name;
+    private String description;
     private int hunger;
     private int thirst;
 
@@ -8,7 +10,9 @@ public class VirtualPet {
     private int boredom;
     private int sickness;
 
-    public VirtualPet(){
+    public VirtualPet(String name, String description){
+        this.name = name;
+        this.description = description;
         hunger = 50;
         thirst = 50;
         waste = 50;
@@ -53,6 +57,21 @@ public class VirtualPet {
     }
     public int getSickness(){
         return sickness;
+    }
+        public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
 
